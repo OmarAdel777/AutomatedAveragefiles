@@ -40,7 +40,7 @@ def main():
     specific_row_index = st.text_input("Enter the row index for cell average (leave empty for column average):")
 
     if st.button("Calculate Averages"):
-        if os.path.exists(folder_path):
+        if folder_path and os.path.exists(folder_path):
             if specific_row_index == "":
                 specific_row_index = None
             else:
@@ -66,8 +66,12 @@ def main():
 
             else:
                 st.error("Error: The number of averages and file names do not match.")
-        else:
-            st.error("Invalid folder path. Please enter a valid path.")
+        elif folder_path:
+            st.error("The provided folder path does not exist.")
+    
+    # You can optionally add a message for when the folder_path is empty
+    # else:
+    #     st.info("Please enter a folder path.")
 
 if __name__ == "__main__":
     main()
