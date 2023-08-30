@@ -1,4 +1,5 @@
-# AutomatedAveragefiles # Excel Column Averages App
+
+# Excel Column Averages App
 
 This is a Streamlit app that calculates and displays averages from Excel files within a specified folder. It allows you to calculate averages of a specified column and optionally a specific cell within a row.
 
@@ -14,12 +15,35 @@ This is a Streamlit app that calculates and displays averages from Excel files w
 
    ```bash
    git clone https://github.com/your-username/excel-column-averages.git
-1.Navigate to the project directory:
-cd excel-column-averages
+   ```
 
-2.Install the required dependencies:
-pip install -r requirements.txt
+2. Navigate to the project directory:
 
-Usage
-Run the Streamlit app:
-streamlit run app.py
+   ```bash
+   cd excel-column-averages
+   ```
+
+3. Install the required dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+1. Run the Streamlit app:
+
+   ```bash
+   streamlit run app.py
+   ```
+
+2. Enter the folder path containing your Excel files.
+3. Enter the column name for which you want to calculate averages.
+4. Optionally, enter the row index for a specific cell average (leave empty for column average).
+5. Click the "Calculate Averages" button to see the results.
+
+
+
+
+
+
